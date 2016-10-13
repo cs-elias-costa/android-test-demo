@@ -25,6 +25,7 @@ android {
           def manifestParser = new com.android.builder.core.DefaultManifestParser()
           variant.outputFile = new File(file.parent, file.name.replace(".apk", "-" + manifestParser.getVersionName(android.sourceSets.main.manifest.srcFile) + ".apk"))
       }
+    }
   }
 
   packagingOptions {
